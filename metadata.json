@@ -1,0 +1,6 @@
+{
+  "name": "TestPro - Professional Onlayn Test Platformasi",
+  "description": "O'quvchilar va o'qituvchilar uchun zamonaviy, xavfsiz va tezkor onlayn test platformasi. Telegram bot orqali autentifikatsiya, server-side tekshiruv va to'liq tahlil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

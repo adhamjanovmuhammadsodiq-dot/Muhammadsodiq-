@@ -1,0 +1,914 @@
+{
+  "users": [
+    {
+      "id": "user-admin",
+      "firstName": "Olim",
+      "lastName": "Muallimov",
+      "phone": "+998901234567",
+      "role": "admin",
+      "createdAt": 1788579330944,
+      "lastLoginAt": 1791171330944
+    },
+    {
+      "id": "user-student-demo",
+      "firstName": "Azizbek",
+      "lastName": "Karimov",
+      "phone": "+998939876543",
+      "role": "student",
+      "createdAt": 1790307330944,
+      "lastLoginAt": 1791084930944
+    },
+    {
+      "id": "usr-gyfil0m6",
+      "firstName": "Jamshid",
+      "lastName": "Toshmatov",
+      "phone": "+998909998877",
+      "role": "student",
+      "createdAt": 1791171354274,
+      "lastLoginAt": 1791171354274
+    },
+    {
+      "id": "usr-card5dry",
+      "firstName": "muhammadsodiq",
+      "lastName": "adhamjanov",
+      "phone": "+998917690141",
+      "role": "student",
+      "createdAt": 1791171530937,
+      "lastLoginAt": 1791171530937
+    }
+  ],
+  "otpCodes": [
+    {
+      "id": "otp-b5329961-b4bf-4664-9fff-371f9f1978c5",
+      "phone": "+998909998877",
+      "code": "580863",
+      "firstName": "Jamshid",
+      "lastName": "Toshmatov",
+      "role": "student",
+      "expiresAt": 1791171647388,
+      "used": true,
+      "attempts": 1,
+      "createdAt": 1791171347388
+    },
+    {
+      "id": "otp-2baa3e5c-0f71-4f18-92a6-f989d5055de4",
+      "phone": "+998917690141",
+      "code": "710037",
+      "firstName": "muhammadsodiq",
+      "lastName": "adhamjanov",
+      "role": "student",
+      "expiresAt": 1791171805506,
+      "used": true,
+      "attempts": 0,
+      "createdAt": 1791171505506
+    },
+    {
+      "id": "otp-fbea4171-2b01-4238-ab07-79d5cd2d78b7",
+      "phone": "+998917690141",
+      "code": "322795",
+      "firstName": "muhammadsodiq",
+      "lastName": "adhamjanov",
+      "role": "student",
+      "expiresAt": 1791171821724,
+      "used": true,
+      "attempts": 1,
+      "createdAt": 1791171521724
+    }
+  ],
+  "sessions": [
+    {
+      "token": "aa7ee48e5fa346b069f1d1b0540942c3379afe44ebdc32cca9ed8aa5fb8995df",
+      "userId": "usr-gyfil0m6",
+      "role": "student",
+      "createdAt": 1791171354274,
+      "expiresAt": 1793763354274
+    }
+  ],
+  "tests": [
+    {
+      "id": "test-math-01",
+      "title": "Matematika: Algebra va Geometriya (DTM standarti)",
+      "subject": "Matematika",
+      "description": "Tenglamalar, funksiyalar, logarifmlar va planimetriya bo'yicha saralangan chuqurlashtirilgan test savollari.",
+      "grade": "Abituriyent / 11-sinf",
+      "durationMinutes": 25,
+      "passingScore": 60,
+      "active": true,
+      "createdAt": 1790739330944,
+      "createdBy": "admin",
+      "questions": [
+        {
+          "id": "qm-1",
+          "text": "Tenglamani yeching: 2^(x+2) + 2^x = 40",
+          "options": [
+            {
+              "key": "A",
+              "text": "x = 3"
+            },
+            {
+              "key": "B",
+              "text": "x = 2"
+            },
+            {
+              "key": "C",
+              "text": "x = 4"
+            },
+            {
+              "key": "D",
+              "text": "x = 5"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "2^(x+2) + 2^x = 40 => 4 * 2^x + 2^x = 40 => 5 * 2^x = 40 => 2^x = 8 => x = 3.",
+          "points": 2
+        },
+        {
+          "id": "qm-2",
+          "text": "Agar to'g'ri burchakli uchburchakning katetlari 6 cm va 8 cm bo'lsa, gipotenuzaga tushirilgan balandlikni toping.",
+          "options": [
+            {
+              "key": "A",
+              "text": "4.8 cm"
+            },
+            {
+              "key": "B",
+              "text": "5.2 cm"
+            },
+            {
+              "key": "C",
+              "text": "4.5 cm"
+            },
+            {
+              "key": "D",
+              "text": "5.0 cm"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "Gipotenuza c = √(6² + 8²) = 10 cm. Yuzasi S = (a * b) / 2 = (6 * 8) / 2 = 24 cm². Boshqa tomondan S = (c * h) / 2 => h = 2S / c = 48 / 10 = 4.8 cm.",
+          "points": 2
+        },
+        {
+          "id": "qm-3",
+          "text": "log₃(2x - 5) = 2 tenglamaning ildizini toping.",
+          "options": [
+            {
+              "key": "A",
+              "text": "x = 7"
+            },
+            {
+              "key": "B",
+              "text": "x = 6"
+            },
+            {
+              "key": "C",
+              "text": "x = 8"
+            },
+            {
+              "key": "D",
+              "text": "x = 11"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "2x - 5 = 3² = 9 => 2x = 14 => x = 7. Aniqlanish sohasi 2x - 5 > 0 qanoatlantiriladi.",
+          "points": 2
+        },
+        {
+          "id": "qm-4",
+          "text": "Arifmetik progressiyada a₁ = 3 va d = 4 bo'lsa, uning dastlabki 10 ta hadi yig'indisini hisoblang.",
+          "options": [
+            {
+              "key": "A",
+              "text": "210"
+            },
+            {
+              "key": "B",
+              "text": "190"
+            },
+            {
+              "key": "C",
+              "text": "220"
+            },
+            {
+              "key": "D",
+              "text": "240"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "S_n = (2a₁ + (n - 1)d) * n / 2. S₁₀ = (2 * 3 + 9 * 4) * 10 / 2 = (6 + 36) * 5 = 42 * 5 = 210.",
+          "points": 2
+        },
+        {
+          "id": "qm-5",
+          "text": "f(x) = x³ - 3x² + 5 funksiyaning x = 2 nuqtadagi hosilasini hisoblang.",
+          "options": [
+            {
+              "key": "A",
+              "text": "0"
+            },
+            {
+              "key": "B",
+              "text": "3"
+            },
+            {
+              "key": "C",
+              "text": "-3"
+            },
+            {
+              "key": "D",
+              "text": "6"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "f'(x) = 3x² - 6x. x = 2 bo'lganda: f'(2) = 3*(2)² - 6*(2) = 12 - 12 = 0.",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "test-physics-01",
+      "title": "Fizika: Mexanika va Dinamika Asoslari",
+      "subject": "Fizika",
+      "description": "Nyuton qonunlari, harakat kinematikasi, impuls va energiyaning saqlanish qonunlari.",
+      "grade": "10-11 sinf",
+      "durationMinutes": 20,
+      "passingScore": 60,
+      "active": true,
+      "createdAt": 1790912130944,
+      "createdBy": "admin",
+      "questions": [
+        {
+          "id": "qp-1",
+          "text": "Jism tinch holatdan a = 2 m/s² doimiy tezlanish bilan to'g'ri chiziqli tekis tezlanuvchan harakat boshladi. 5 sekundda jism qancha masofa bosib o'tadi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "25 m"
+            },
+            {
+              "key": "B",
+              "text": "20 m"
+            },
+            {
+              "key": "C",
+              "text": "50 m"
+            },
+            {
+              "key": "D",
+              "text": "10 m"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "S = a * t² / 2 = 2 * (5)² / 2 = 25 metr.",
+          "points": 2
+        },
+        {
+          "id": "qp-2",
+          "text": "Massasi 4 kg bo'lgan jismga 12 N kuch ta'sir etganda jism qanday tezlanish oladi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "3 m/s²"
+            },
+            {
+              "key": "B",
+              "text": "48 m/s²"
+            },
+            {
+              "key": "C",
+              "text": "0.33 m/s²"
+            },
+            {
+              "key": "D",
+              "text": "8 m/s²"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "Nyutonning 2-qonuniga binoan: F = m * a => a = F / m = 12 / 4 = 3 m/s².",
+          "points": 2
+        },
+        {
+          "id": "qp-3",
+          "text": "Massasi 2 kg bo'lgan jism 10 m/s tezlik bilan harakatlanmoqda. Uning kinetik energiyasini toping.",
+          "options": [
+            {
+              "key": "A",
+              "text": "100 J"
+            },
+            {
+              "key": "B",
+              "text": "20 J"
+            },
+            {
+              "key": "C",
+              "text": "200 J"
+            },
+            {
+              "key": "D",
+              "text": "50 J"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "E_k = (m * v²) / 2 = (2 * 10²) / 2 = 100 Joul.",
+          "points": 2
+        },
+        {
+          "id": "qp-4",
+          "text": "Bosimning Xalqaro birliklar sistemasidagi (SI) asosiy birligi nima?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Paskal (Pa)"
+            },
+            {
+              "key": "B",
+              "text": "Nyuton (N)"
+            },
+            {
+              "key": "C",
+              "text": "Joul (J)"
+            },
+            {
+              "key": "D",
+              "text": "Vatt (W)"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "Bosim birligi Pa (Paskal) bo'lib, 1 Pa = 1 N / m² ga teng.",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "test-uzbek-01",
+      "title": "Ona tili: Grammatika va Imlo Qoidalari",
+      "subject": "Ona tili",
+      "description": "So'z yasalishi, morfemika, imlo me'yorlari va sintaksis qoidalari.",
+      "grade": "Umumiy / DTM",
+      "durationMinutes": 15,
+      "passingScore": 60,
+      "active": true,
+      "createdAt": 1790998530944,
+      "createdBy": "admin",
+      "questions": [
+        {
+          "id": "qu-1",
+          "text": "Qaysi qatorda imlo jihatdan xato yozilgan so'z mavjud?",
+          "options": [
+            {
+              "key": "A",
+              "text": "mashg'ulot, ma'naviyat, taraqqiyot"
+            },
+            {
+              "key": "B",
+              "text": "muomalat, tasavur, muddao"
+            },
+            {
+              "key": "C",
+              "text": "mutaxassis, muvozanat, tabassum"
+            },
+            {
+              "key": "D",
+              "text": "samarali, taassurot, tabrik"
+            }
+          ],
+          "correctOption": "B",
+          "explanation": "\"tasavur\" emas, \"tasavvur\" (ikkita v bilan) yozilishi shart.",
+          "points": 2
+        },
+        {
+          "id": "qu-2",
+          "text": "\"Vatan oldidagi burchimizni sharaf bilan bajaramiz.\" Gapdagi bosh bo'laklarni aniqlang.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ega yashiringan (Biz), kesim: bajaramiz"
+            },
+            {
+              "key": "B",
+              "text": "Ega: burchimizni, kesim: bajaramiz"
+            },
+            {
+              "key": "C",
+              "text": "Ega: Vatan, kesim: sharaf"
+            },
+            {
+              "key": "D",
+              "text": "Ega: sharaf bilan, kesim: bajaramiz"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "Gapda ega ifodalanmagan, 1-shaxs ko'plikdagi \"biz\" olmoshi bilan ifodalangan bir sostavli shaxsi ma'lum gap.",
+          "points": 2
+        },
+        {
+          "id": "qu-3",
+          "text": "Qaysi qatorda o'zaro sinonim so'zlar berilgan?",
+          "options": [
+            {
+              "key": "A",
+              "text": "ulug', buyuk, mahobatli"
+            },
+            {
+              "key": "B",
+              "text": "yaxshi, yomon, xunuk"
+            },
+            {
+              "key": "C",
+              "text": "baland, past, tekis"
+            },
+            {
+              "key": "D",
+              "text": "erta, kech, tong"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "Ulug', buyuk, mahobatli so'zlari kattalik va yuksaklik ma'nosini bildiruvchi sinonimlar qatoridir.",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "test-it-01",
+      "title": "Informatika va IT: Dasturlash va Algoritmlar",
+      "subject": "IT va Dasturlash",
+      "description": "Ma'lumotlar tuzilmalari, algoritmlar murakkabligi va web texnologiyalari asoslari.",
+      "grade": "Boshlang'ich / O'rta",
+      "durationMinutes": 20,
+      "passingScore": 70,
+      "active": true,
+      "createdAt": 1791084930944,
+      "createdBy": "admin",
+      "questions": [
+        {
+          "id": "qit-1",
+          "text": "Ikkilik qidirish (Binary Search) algoritmining o'rtacha vaqt murakkabligi qanday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "O(log n)"
+            },
+            {
+              "key": "B",
+              "text": "O(n)"
+            },
+            {
+              "key": "C",
+              "text": "O(n²)"
+            },
+            {
+              "key": "D",
+              "text": "O(1)"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "Binary Search har bir qadamda massivni ikkiga bo'lgani uchun uning vaqt murakkabligi O(log n) ga teng.",
+          "points": 2
+        },
+        {
+          "id": "qit-2",
+          "text": "Quyidagilardan qaysi biri HTTP protokolidagi xavfsiz (shifrlangan) standart hisoblanadi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "HTTPS (port 443)"
+            },
+            {
+              "key": "B",
+              "text": "FTP (port 21)"
+            },
+            {
+              "key": "C",
+              "text": "Telnet (port 23)"
+            },
+            {
+              "key": "D",
+              "text": "HTTP (port 80)"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "HTTPS (SSL/TLS orqali shifrlangan HTTP) 443-portda ma'lumotlar xavfsizligini ta'minlaydi.",
+          "points": 2
+        },
+        {
+          "id": "qit-3",
+          "text": "JavaScript tilida qaysi kalit so'z qayta qiymat berib bo'lmaydigan (o'zgarmas) o'zgaruvchi e'lon qiladi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "const"
+            },
+            {
+              "key": "B",
+              "text": "let"
+            },
+            {
+              "key": "C",
+              "text": "var"
+            },
+            {
+              "key": "D",
+              "text": "static"
+            }
+          ],
+          "correctOption": "A",
+          "explanation": "const - o'zgarmas havolani belgilaydi, unga boshqa yangi qiymat o'zlashtirib bo'lmaydi.",
+          "points": 2
+        }
+      ]
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-yl3zae3l",
+      "testId": "test-math-01",
+      "testTitle": "Matematika: Algebra va Geometriya (DTM standarti)",
+      "subject": "Matematika",
+      "userId": "guest-keu8aem",
+      "studentName": "Farrux",
+      "studentPhone": "Mehmon",
+      "userAnswers": {
+        "qm-1": "A",
+        "qm-2": "A",
+        "qm-3": "A",
+        "qm-4": "A",
+        "qm-5": "A"
+      },
+      "score": 10,
+      "maxScore": 10,
+      "percentage": 100,
+      "totalQuestions": 5,
+      "correctCount": 5,
+      "incorrectCount": 0,
+      "unansweredCount": 0,
+      "passed": true,
+      "timeSpentSeconds": 180,
+      "submittedAt": 1791171790962,
+      "results": [
+        {
+          "questionId": "qm-1",
+          "questionText": "Tenglamani yeching: 2^(x+2) + 2^x = 40",
+          "options": [
+            {
+              "key": "A",
+              "text": "x = 3"
+            },
+            {
+              "key": "B",
+              "text": "x = 2"
+            },
+            {
+              "key": "C",
+              "text": "x = 4"
+            },
+            {
+              "key": "D",
+              "text": "x = 5"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "2^(x+2) + 2^x = 40 => 4 * 2^x + 2^x = 40 => 5 * 2^x = 40 => 2^x = 8 => x = 3.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qm-2",
+          "questionText": "Agar to'g'ri burchakli uchburchakning katetlari 6 cm va 8 cm bo'lsa, gipotenuzaga tushirilgan balandlikni toping.",
+          "options": [
+            {
+              "key": "A",
+              "text": "4.8 cm"
+            },
+            {
+              "key": "B",
+              "text": "5.2 cm"
+            },
+            {
+              "key": "C",
+              "text": "4.5 cm"
+            },
+            {
+              "key": "D",
+              "text": "5.0 cm"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "Gipotenuza c = √(6² + 8²) = 10 cm. Yuzasi S = (a * b) / 2 = (6 * 8) / 2 = 24 cm². Boshqa tomondan S = (c * h) / 2 => h = 2S / c = 48 / 10 = 4.8 cm.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qm-3",
+          "questionText": "log₃(2x - 5) = 2 tenglamaning ildizini toping.",
+          "options": [
+            {
+              "key": "A",
+              "text": "x = 7"
+            },
+            {
+              "key": "B",
+              "text": "x = 6"
+            },
+            {
+              "key": "C",
+              "text": "x = 8"
+            },
+            {
+              "key": "D",
+              "text": "x = 11"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "2x - 5 = 3² = 9 => 2x = 14 => x = 7. Aniqlanish sohasi 2x - 5 > 0 qanoatlantiriladi.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qm-4",
+          "questionText": "Arifmetik progressiyada a₁ = 3 va d = 4 bo'lsa, uning dastlabki 10 ta hadi yig'indisini hisoblang.",
+          "options": [
+            {
+              "key": "A",
+              "text": "210"
+            },
+            {
+              "key": "B",
+              "text": "190"
+            },
+            {
+              "key": "C",
+              "text": "220"
+            },
+            {
+              "key": "D",
+              "text": "240"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "S_n = (2a₁ + (n - 1)d) * n / 2. S₁₀ = (2 * 3 + 9 * 4) * 10 / 2 = (6 + 36) * 5 = 42 * 5 = 210.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qm-5",
+          "questionText": "f(x) = x³ - 3x² + 5 funksiyaning x = 2 nuqtadagi hosilasini hisoblang.",
+          "options": [
+            {
+              "key": "A",
+              "text": "0"
+            },
+            {
+              "key": "B",
+              "text": "3"
+            },
+            {
+              "key": "C",
+              "text": "-3"
+            },
+            {
+              "key": "D",
+              "text": "6"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "f'(x) = 3x² - 6x. x = 2 bo'lganda: f'(2) = 3*(2)² - 6*(2) = 12 - 12 = 0.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        }
+      ]
+    },
+    {
+      "id": "sub-5obyq8h6",
+      "testId": "test-it-01",
+      "testTitle": "Informatika va IT: Dasturlash va Algoritmlar",
+      "subject": "IT va Dasturlash",
+      "userId": "usr-card5dry",
+      "studentName": "muhammadsodiq adhamjanov",
+      "studentPhone": "+998917690141",
+      "userAnswers": {},
+      "score": 0,
+      "maxScore": 6,
+      "percentage": 0,
+      "totalQuestions": 3,
+      "correctCount": 0,
+      "incorrectCount": 0,
+      "unansweredCount": 3,
+      "passed": false,
+      "timeSpentSeconds": 8,
+      "submittedAt": 1791171564478,
+      "results": [
+        {
+          "questionId": "qit-1",
+          "questionText": "Ikkilik qidirish (Binary Search) algoritmining o'rtacha vaqt murakkabligi qanday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "O(log n)"
+            },
+            {
+              "key": "B",
+              "text": "O(n)"
+            },
+            {
+              "key": "C",
+              "text": "O(n²)"
+            },
+            {
+              "key": "D",
+              "text": "O(1)"
+            }
+          ],
+          "correctOption": "A",
+          "isCorrect": false,
+          "isUnanswered": true,
+          "explanation": "Binary Search har bir qadamda massivni ikkiga bo'lgani uchun uning vaqt murakkabligi O(log n) ga teng.",
+          "pointsEarned": 0,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qit-2",
+          "questionText": "Quyidagilardan qaysi biri HTTP protokolidagi xavfsiz (shifrlangan) standart hisoblanadi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "HTTPS (port 443)"
+            },
+            {
+              "key": "B",
+              "text": "FTP (port 21)"
+            },
+            {
+              "key": "C",
+              "text": "Telnet (port 23)"
+            },
+            {
+              "key": "D",
+              "text": "HTTP (port 80)"
+            }
+          ],
+          "correctOption": "A",
+          "isCorrect": false,
+          "isUnanswered": true,
+          "explanation": "HTTPS (SSL/TLS orqali shifrlangan HTTP) 443-portda ma'lumotlar xavfsizligini ta'minlaydi.",
+          "pointsEarned": 0,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qit-3",
+          "questionText": "JavaScript tilida qaysi kalit so'z qayta qiymat berib bo'lmaydigan (o'zgarmas) o'zgaruvchi e'lon qiladi?",
+          "options": [
+            {
+              "key": "A",
+              "text": "const"
+            },
+            {
+              "key": "B",
+              "text": "let"
+            },
+            {
+              "key": "C",
+              "text": "var"
+            },
+            {
+              "key": "D",
+              "text": "static"
+            }
+          ],
+          "correctOption": "A",
+          "isCorrect": false,
+          "isUnanswered": true,
+          "explanation": "const - o'zgarmas havolani belgilaydi, unga boshqa yangi qiymat o'zlashtirib bo'lmaydi.",
+          "pointsEarned": 0,
+          "maxPoints": 2
+        }
+      ]
+    },
+    {
+      "id": "sub-hp31yefr",
+      "testId": "test-uzbek-01",
+      "testTitle": "Ona tili: Grammatika va Imlo Qoidalari",
+      "subject": "Ona tili",
+      "userId": "usr-gyfil0m6",
+      "studentName": "Jamshid Toshmatov",
+      "studentPhone": "+998909998877",
+      "userAnswers": {
+        "qu-1": "B",
+        "qu-2": "A",
+        "qu-3": "A"
+      },
+      "score": 6,
+      "maxScore": 6,
+      "percentage": 100,
+      "totalQuestions": 3,
+      "correctCount": 3,
+      "incorrectCount": 0,
+      "unansweredCount": 0,
+      "passed": true,
+      "timeSpentSeconds": 120,
+      "submittedAt": 1791171379144,
+      "results": [
+        {
+          "questionId": "qu-1",
+          "questionText": "Qaysi qatorda imlo jihatdan xato yozilgan so'z mavjud?",
+          "options": [
+            {
+              "key": "A",
+              "text": "mashg'ulot, ma'naviyat, taraqqiyot"
+            },
+            {
+              "key": "B",
+              "text": "muomalat, tasavur, muddao"
+            },
+            {
+              "key": "C",
+              "text": "mutaxassis, muvozanat, tabassum"
+            },
+            {
+              "key": "D",
+              "text": "samarali, taassurot, tabrik"
+            }
+          ],
+          "userAnswer": "B",
+          "correctOption": "B",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "\"tasavur\" emas, \"tasavvur\" (ikkita v bilan) yozilishi shart.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qu-2",
+          "questionText": "\"Vatan oldidagi burchimizni sharaf bilan bajaramiz.\" Gapdagi bosh bo'laklarni aniqlang.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Ega yashiringan (Biz), kesim: bajaramiz"
+            },
+            {
+              "key": "B",
+              "text": "Ega: burchimizni, kesim: bajaramiz"
+            },
+            {
+              "key": "C",
+              "text": "Ega: Vatan, kesim: sharaf"
+            },
+            {
+              "key": "D",
+              "text": "Ega: sharaf bilan, kesim: bajaramiz"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "Gapda ega ifodalanmagan, 1-shaxs ko'plikdagi \"biz\" olmoshi bilan ifodalangan bir sostavli shaxsi ma'lum gap.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        },
+        {
+          "questionId": "qu-3",
+          "questionText": "Qaysi qatorda o'zaro sinonim so'zlar berilgan?",
+          "options": [
+            {
+              "key": "A",
+              "text": "ulug', buyuk, mahobatli"
+            },
+            {
+              "key": "B",
+              "text": "yaxshi, yomon, xunuk"
+            },
+            {
+              "key": "C",
+              "text": "baland, past, tekis"
+            },
+            {
+              "key": "D",
+              "text": "erta, kech, tong"
+            }
+          ],
+          "userAnswer": "A",
+          "correctOption": "A",
+          "isCorrect": true,
+          "isUnanswered": false,
+          "explanation": "Ulug', buyuk, mahobatli so'zlari kattalik va yuksaklik ma'nosini bildiruvchi sinonimlar qatoridir.",
+          "pointsEarned": 2,
+          "maxPoints": 2
+        }
+      ]
+    }
+  ]
+}
